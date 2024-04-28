@@ -27,5 +27,12 @@ plt.xlabel('Característica 1')
 plt.ylabel('Característica 2')
 plt.show()
 
-#Neste exemplo, o algoritmo K-Means é aplicado ao conjunto de dados Iris para agrupar os dados em três clusters.
-# O código inclui uma visualização simples dos clusters e seus centróides no espaço bidimensional das duas primeiras características do conjunto de dados.
+Esse código é um exemplo simples de como usar o algoritmo de aprendizado não supervisionado K-Means para agrupar dados. Aqui está uma explicação passo a passo:
+
+1. **Importação de bibliotecas**: As bibliotecas necessárias são importadas. Isso inclui `datasets` e `KMeans` do scikit-learn para carregar o conjunto de dados Iris e aplicar o algoritmo K-Means, respectivamente. Também é importado `matplotlib.pyplot` para visualização dos resultados.
+2. **Carregamento do conjunto de dados**: O conjunto de dados Iris é carregado usando o método `load_iris()` da biblioteca `datasets` do scikit-learn. Os dados são armazenados na variável `X`.
+3. **Criação do modelo K-Means**: Um objeto do modelo K-Means é criado com `n_clusters=3`, indicando que queremos agrupar os dados em 3 clusters. Isso é feito porque sabemos que o conjunto de dados Iris possui 3 classes distintas.
+4. **Treinamento do modelo**: O modelo K-Means é treinado com os dados usando o método `fit()`.
+5. **Obtenção dos rótulos dos clusters e centróides**: Após o treinamento, obtemos os rótulos dos clusters para cada amostra usando `kmeans_model.labels_`. Além disso, os centróides de cada cluster são obtidos com `kmeans_model.cluster_centers_`.
+6. **Visualização dos resultados**: Os dados são visualizados no plano bidimensional. Cada ponto é colorido de acordo com o cluster ao qual foi atribuído. Os centróides de cada cluster são representados por um marcador "X" vermelho. O gráfico resultante mostra como os dados foram agrupados pelo algoritmo K-Means.
+Essencialmente, o código demonstra como usar o K-Means para encontrar padrões nos dados, mesmo sem rótulos prévios, e visualizar esses padrões por meio da clusterização.

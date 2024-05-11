@@ -19,3 +19,28 @@ feedback_usuario = avaliar_prompt(prompt_usuario)
 
 # Exibir feedback
 print(feedback_usuario)
+
+
+EXPLICAÇÃO DO CÓDIGO:
+
+O código fornecido tem como objetivo avaliar se o prompt de entrada do usuário contém palavras-chave relevantes. Aqui está uma explicação detalhada das funcionalidades e do objetivo do código:
+
+1. **Entrada do Usuário**:
+   - O código solicita ao usuário que insira um prompt através da função `input()`. O prompt é armazenado na variável `prompt_usuario`.
+
+2. **Função para Avaliar o Prompt**:
+   - A função `avaliar_prompt()` é definida para avaliar se o prompt do usuário contém palavras-chave relevantes.
+   - Ela recebe o prompt como parâmetro.
+   - Uma lista de palavras-chave relevantes é definida na variável `palavras_chave`.
+   - A função itera sobre cada palavra-chave na lista e verifica se ela está presente no prompt do usuário usando a expressão `in`.
+   - Se pelo menos uma palavra-chave for encontrada no prompt, a função retorna "O prompt está adequado.".
+   - Caso contrário, se nenhuma palavra-chave for encontrada, a função retorna "O prompt não está adequado. Inclua palavras-chave relevantes.".
+
+3. **Avaliação do Prompt do Usuário**:
+   - Após a definição da função, o código chama a função `avaliar_prompt()` com o prompt do usuário como argumento, armazenando o resultado na variável `feedback_usuario`.
+
+4. **Exibição do Feedback**:
+   - Por fim, o código imprime o feedback obtido da avaliação do prompt do usuário.
+
+**Objetivo do Código**:
+O objetivo deste código é fornecer feedback ao usuário sobre se o prompt inserido contém palavras-chave relevantes. Ele pode ser usado em aplicações que requerem entrada de texto do usuário, como chatbots ou sistemas de processamento de linguagem natural, para garantir que as consultas do usuário sejam suficientemente informativas e relevantes para serem processadas com eficácia.

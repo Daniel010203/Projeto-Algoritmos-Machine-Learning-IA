@@ -42,3 +42,24 @@ def sugerir_cogumelos(cogumelo_desejado):
 
 # Chamada da função para sugerir cogumelos
 sugerir_cogumelos(cogumelo_desejado)
+
+
+EXPLICAÇÃO DO CÓDIGO:
+Este código tem como objetivo sugerir cogumelos com preços mais baixos com base em um cogumelo desejado inserido pelo usuário.
+
+1. **Entrada do Usuário**:
+   - O usuário é solicitado a inserir o nome do cogumelo desejado.
+
+2. **Função para Sugerir Cogumelos**:
+   - A função `sugerir_cogumelos(cogumelo_desejado)` é definida para receber o cogumelo desejado como entrada.
+   - Um dicionário chamado `catalogo` é definido, onde as chaves são os tipos de cogumelos e os valores são os preços correspondentes.
+
+3. **Verificação e Sugerir Cogumelos Mais Baratos**:
+   - O código verifica se o cogumelo desejado está presente no catálogo. Se estiver, armazena o preço do cogumelo desejado e cria uma lista vazia para as sugestões.
+   - Procura por cogumelos mais baratos no catálogo e os adiciona à lista de sugestões.
+   - Se não houver sugestões disponíveis ou se o cogumelo desejado não estiver no catálogo, são exibidas mensagens de erro apropriadas.
+
+4. **Exibição das Sugestões**:
+   - As sugestões de cogumelos mais baratos, junto com seus preços, são exibidas ao usuário.
+
+O objetivo deste código é fornecer ao usuário sugestões de cogumelos com preços mais baixos em relação ao cogumelo desejado inicialmente inserido. Isso pode ser útil em cenários de compras online, onde o usuário deseja explorar alternativas mais econômicas para um determinado produto.
